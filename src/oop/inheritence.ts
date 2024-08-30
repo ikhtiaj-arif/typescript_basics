@@ -15,8 +15,11 @@ class Parent {
 }
 
 class Student extends Parent {
-  constructor(name: string, age: number, address: string) {
+  roll: string;
+
+  constructor(name: string, age: number, address: string, roll: string) {
     super(name, age, address);
+    this.roll = roll
   }
 
   // makeSleep(hours:number):string {
@@ -24,7 +27,7 @@ class Student extends Parent {
   // }
 }
 
-const student1 = new Student("babul", 12, "dakadbd");
+const student1 = new Student("babul", 12, "dakadbd", "122");
 student1.makeSleep(8)
 
 class Teacher extends Parent {
